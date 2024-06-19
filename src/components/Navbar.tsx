@@ -1,8 +1,17 @@
 import React from 'react'
+import Link from 'next/link'
+import Menu from './Menu'
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <div className='h-12 text-red-500 p-4 flex justify-between items-center border-b-2 border-b-red-500 uppercase'>
+      <div className='text-xl'>
+        <Link href="/">Crusty Cravings</Link>
+      </div>
+      <div>
+        <Menu />
+      </div>
+    </div>
   )
 }
 
